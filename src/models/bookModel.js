@@ -1,26 +1,26 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-const bookCollection = new mongoose.Schema( {
+const bookCollection = new mongoose.Schema(
+  {
     bookName: {
-        type: String, 
-        require : true
+      type: String,
+      require: true,
     },
-        prices: {
-            indianPrice: String,
-            europeanPrice: String,
-        },
-        year : {type: Number, default: 2021},
-        authorName : String,
-        totalPages : Number,
-        stockAvailable  : Boolean
-   
+    prices: {
+      indianPrice: String,
+      europeanPrice: String,
+    },
+    year: { type: Number, default: 2021 },
+    authorName: String,
+    totalPages: Number,
+    stockAvailable: Boolean,
+
     // sales: {type: Number, default: 10}
-}, { timestamps: true });
+  },
+  { timestamps: true }
+);
 
-
-module.exports = mongoose.model('Book', bookCollection) 
-
-
+module.exports = mongoose.model("Book", bookCollection);
 
 //1.
 // {
@@ -40,7 +40,6 @@ module.exports = mongoose.model('Book', bookCollection)
 //       "__v": 0
 //     }
 // }
-
 
 //2.
 // "msg": [
@@ -162,7 +161,6 @@ module.exports = mongoose.model('Book', bookCollection)
 //         "updatedAt": "2022-08-16T07:31:58.491Z",
 //         "__v": 0
 //     },
-
 
 //5.
 
