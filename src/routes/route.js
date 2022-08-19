@@ -8,11 +8,11 @@ router.get("/test-me", function (req, res) {
     res.send("My first ever api!")
 })
 
-router.post("/createAuthor", authorController.createAuthor  )
+router.post("/createAuthors", authorController.createAuthors  )
 
 router.get("/getAuthorsData", authorController.getAuthorsData)
 
-router.post("/createBook", bookController.createBook  )
+router.post("/createBooks", bookController.createBooks)
 
 router.get("/getBooksData", bookController.getBooksData)
 
