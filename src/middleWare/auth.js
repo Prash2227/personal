@@ -7,7 +7,7 @@ const midWare1 = async function (req, res, next) {
   try {
     let token = req.headers["x-auth-token"]
     if (!token) { return res.status(401).send("Header is missing") }
-    let decodedToken = jwt.verify(token, "I am learning the creation of jw")
+    let decodedToken = jwt.verify(token, "I am learning the creation of jwt")
     if (!decodedToken) { return res.status(401).send("Not a valid token") }
     let user = decodedToken.userID
     let userId = req.params.userId
