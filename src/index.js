@@ -10,7 +10,7 @@ const { default: mongoose } = require('mongoose')
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-mongoose.connect("mongodb+srv://sonal-plutonium:5dJokPsnG43EGYHE@cluster0.koc4qx2.mongodb.net/sonal-DB?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://Prashant-8497:FZjfI0McE6kHa9II@cluster0.rgvnszv.mongodb.net/Prashant8497?retryWrites=true&w=majority", {
     useNewUrlParser: true
     
 })
