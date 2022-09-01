@@ -7,8 +7,10 @@ const route = require('./routes/route');
 const app = express();
 const { default: mongoose } = require('mongoose')
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json())
+
 
 mongoose.connect("mongodb+srv://sonal-plutonium:5dJokPsnG43EGYHE@cluster0.koc4qx2.mongodb.net/sonal-DB?retryWrites=true&w=majority", {
     useNewUrlParser: true
@@ -16,7 +18,6 @@ mongoose.connect("mongodb+srv://sonal-plutonium:5dJokPsnG43EGYHE@cluster0.koc4qx
 })
     .then(() => console.log("MongoDB is connected"))
     .catch(err => console.log(err))
-
 
 
 app.use('/', route);
