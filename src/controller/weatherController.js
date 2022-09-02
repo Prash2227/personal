@@ -12,7 +12,7 @@ const getCurrentWeather = async function(req, res){
                 url: `http://api.openweathermap.org/data/2.5/weather?q=${city[i]}&appid=${appid}`
             }
             let result = await axios(options)
-            objInArray.temperature = (result.data.main.temp).toString()
+            objInArray.temperature = (result.data.main.temp)
             resultArray.push(objInArray)
         }
 
