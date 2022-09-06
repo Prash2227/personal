@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sonalgill/Personal.git"
+    "url": "https://github.com/Prash2227/personal.git"
   },
   "author": "Sonal",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sonalgill/Personal/issues"
+    "url": "https://github.com/Prash2227/personal/issues"
   },
-  "homepage": "https://github.com/sonalgill/Personal#readme",
+  "homepage": "https://github.com/Prash2227/personal#readme",
   "dependencies": {
     "axios": "^0.27.2",
     "bcrypt": "^5.0.1",
